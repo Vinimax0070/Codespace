@@ -73,3 +73,41 @@ print("Considerações finais:")
 print("- Listas são mutáveis, tuplas são imutáveis.")
 print("- Use listas quando precisar de mutabilidade, use tuplas para dados imutáveis.")
 print("- Escolha entre for e while dependendo do problema e da lógica de controle necessária.")
+
+
+#exericicios
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+soma = num1 + num2
+print("A soma é:", soma)
+
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+num3 = float(input("Digite o terceiro número: "))
+maior = max(num1, num2, num3)
+print("O maior número é:", maior)
+
+num = int(input("Digite um número: "))
+if num % 2 == 0:
+    print(num, "é par.")
+else:
+    print(num, "é ímpar.")
+
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+operacao = input("Digite a operação (+, -, *, /): ")
+
+if operacao == '+':
+    resultado = num1 + num2
+elif operacao == '-':
+    resultado = num1 - num2
+elif operacao == '*':
+    resultado = num1 * num2
+elif operacao == '/':
+    resultado = num1 / num2
+else:
+    print("Operação inválida.")
+    resultado = None
+
+if resultado is not None:
+    print("Resultado:", resultado)
